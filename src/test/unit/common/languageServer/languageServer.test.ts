@@ -49,6 +49,9 @@ suite('Language Server', () => {
           reportFalsePositives: false,
         };
       },
+      getFeaturesConfiguration() {
+        return { ossEnabled: true, codeSecurityEnabled: true, codeQualityEnabled: true, iacEnabled: true };
+      },
     } as IConfiguration;
 
     downloadService = {
@@ -74,7 +77,7 @@ suite('Language Server', () => {
     const expectedInitializationOptions: InitializationOptions = {
       activateSnykCode: 'false',
       activateSnykOpenSource: 'false',
-      activateSnykIac: 'false',
+      activateSnykIac: 'true',
       token: 'testToken',
       cliPath: 'testPath',
       enableTelemetry: 'true',
