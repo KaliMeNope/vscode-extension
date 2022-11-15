@@ -77,7 +77,7 @@ suite('Language Server', () => {
     const expectedInitializationOptions: InitializationOptions = {
       activateSnykCode: 'false',
       activateSnykOpenSource: 'false',
-      activateSnykIac: 'true',
+      activateSnykIac: 'false',
       token: 'testToken',
       cliPath: 'testPath',
       enableTelemetry: 'true',
