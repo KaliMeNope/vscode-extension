@@ -31,9 +31,6 @@ suite('Language Server: Middleware', () => {
           reportFalsePositives: false,
         };
       },
-      getFeaturesConfiguration() {
-        return { ossEnabled: true, codeSecurityEnabled: true, codeQualityEnabled: true, iacEnabled: true };
-      },
     } as IConfiguration;
   });
 
